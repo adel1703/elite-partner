@@ -1,0 +1,20 @@
+<section id="trust" class="trust">
+  <div class="container">
+    <div class="trust-header">
+      <span class="section-label">Why Elite Partners</span>
+      <h2 class="section-title" style="color: white;">Built on Trust, Driven by Results</h2>
+      <p class="section-desc" style="color: rgba(255,255,255,0.6)">
+        We hold ourselves to the highest standards of security, reliability, and partnership integrity.
+        Your success is the only metric that matters.
+      </p>
+    </div>
+
+    <div class="trust-grid">
+      <div class="trust-card" *ngFor="let item of trustItems">
+        <div class="trust-badge">{{ item.badge }}</div>
+        <h3 class="trust-title">{{ item.title }}</h3>
+        <p class="trust-desc">{{ item.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>

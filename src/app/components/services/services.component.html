@@ -1,0 +1,24 @@
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What We Deliver</span>
+      <h2 class="section-title">Comprehensive Technology Solutions</h2>
+      <p class="section-desc">
+        Every engagement is tailored to your enterprise's unique requirements. We don't offer
+        off-the-shelf products — we engineer strategic advantages.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" *ngFor="let service of services">
+        <h3 class="service-title">{{ service.title }}</h3>
+        <p class="service-desc">{{ service.desc }}</p>
+        <div class="service-arrow">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

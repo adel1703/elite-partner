@@ -1,0 +1,42 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">EP</div>
+          <span class="logo-text">Elite Partners</span>
+        </div>
+        <p class="brand-desc">
+          Strategic technology partnerships that drive enterprise transformation. Trusted by
+          Fortune-level organizations across three continents.
+        </p>
+      </div>
+
+      <!-- Solutions -->
+      <div class="footer-col">
+        <h4>Solutions</h4>
+        <ul>
+          <li *ngFor="let item of solutions">
+            <a (click)="scrollTo('services')">{{ item }}</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li *ngFor="let item of company">
+            <a href="#">{{ item }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© {{ currentYear }} Elite Partners. All rights reserved.</p>
+      <p class="tagline">Engineered with precision.</p>
+    </div>
+  </div>
+</footer>

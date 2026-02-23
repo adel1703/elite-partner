@@ -1,0 +1,39 @@
+<section id="hero" class="hero">
+  <div class="hero-bg">
+    <div class="hero-gradient"></div>
+    <div class="hero-grid"></div>
+  </div>
+
+  <div class="container hero-content">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Strategic Technology Solutions</p>
+      <h1 class="hero-title">
+        Empowering Enterprises Through<br>
+        <span class="gold-text">Elite Technology</span> Partnerships
+      </h1>
+      <p class="hero-desc">
+        We architect, deploy, and manage mission-critical technology stacks — from intelligent
+        VoIP infrastructure and bespoke CRM platforms to tailored AI models that drive
+        measurable business outcomes.
+      </p>
+      <div class="hero-actions">
+        <button class="btn-primary" (click)="scrollTo('contact')">
+          Schedule a Consultation
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="btn-secondary" (click)="scrollTo('services')">
+          Explore Our Services
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-card" *ngFor="let stat of stats">
+        <span class="stat-value">{{ stat.value }}</span>
+        <span class="stat-label">{{ stat.label }}</span>
+      </div>
+    </div>
+  </div>
+</section>
